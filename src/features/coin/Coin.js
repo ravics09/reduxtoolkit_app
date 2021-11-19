@@ -1,9 +1,9 @@
 import {useSelector} from 'react-redux';
 const Coin = () => {
-  const count = useSelector((state)=>state.counter.count);
+  const {coin} = useSelector((state)=>state.counter);
   return (
     <div style={{paddingTop: '200px'}}>
-      <b><big className="value">Coins: {count}</big></b>
+      <b><big className="value">Coins: {coin}</big></b>
     </div>
   );
 };
